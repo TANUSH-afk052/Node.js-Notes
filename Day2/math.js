@@ -32,3 +32,8 @@ const b = 4;
 
 console.log('Multiply:', multiply(a, b));
 console.log('Divide:', divide(a, b));
+
+module.exports = {
+    multiply,
+    divide
+};
