@@ -1,8 +1,4 @@
-
 ---
-
-### 📁 `PROJECT_STRUCTURE.md`
-```md
 # Project Structure: node-blog-api
 
 node-blog-api/
