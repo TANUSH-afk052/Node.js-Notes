@@ -165,5 +165,51 @@ Blocking waits for completion; non-blocking executes in background.
 Use https module or libraries like axios / node-fetch.
 
 ---
+## SOME EXTRA BASIC NODE.JS QUES
+
+1. **What is REST API in Node.js?**
+
+   * A way to structure communication between client & server using HTTP methods (GET, POST, PUT, DELETE).
+
+2. **What is JSON and why is it important?**
+
+   * JavaScript Object Notation — lightweight data format, easy for client-server communication.
+
+3. **What is CORS in Node.js?**
+
+   * Cross-Origin Resource Sharing — controls if requests from other domains are allowed.
+
+4. **What is the difference between `let`, `const`, and `var` in Node.js?**
+
+   * `var` = function-scoped, can be redeclared.
+   * `let` = block-scoped, can be reassigned.
+   * `const` = block-scoped, cannot be reassigned.
+
+5. **What is a callback in Node.js?**
+
+   * A function passed as an argument to be executed later after a task finishes.
+
+6. **What is promise chaining?**
+
+   * Using `.then()` multiple times to handle async results step-by-step.
+
+7. **What is async/await?**
+
+   * Syntactic sugar for promises, makes async code look synchronous.
+
+8. **What is clustering in Node.js?**
+
+   * Running multiple Node.js processes to take advantage of multi-core CPUs.
+
+9. **What is difference between `readFile` and `createReadStream`?**
+
+   * `readFile` reads entire file into memory; `createReadStream` reads in chunks.
+
+10. **What is the difference between `res.send()` and `res.json()` in Express?**
+
+    * `res.send()` sends any type of data; `res.json()` sends JSON with proper headers.
+
+---
+
 
 
