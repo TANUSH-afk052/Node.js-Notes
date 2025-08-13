@@ -5,7 +5,25 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-rl.question("What's your name? ", (name) => {
-  console.log(`Hello, ${name}!`);
+function ask(question) {
+  return new Promise((resolve) => rl.question(question, resolve));
+}
+
+(async () => {
+  const name = await ask("Name? ");
+
+  let age;
+  while (true) {
+    const input = await ask("Age? ");
+    if (!isNaN(input) && input.trim() !== "") {
+      age = Number(input);
+      break;
+    }
+    console.log("❌ Please enter a valid number.");
+  }
+
+  const country = await ask("Country? ");
+
+  console.log(`Hi ${name}, age ${age}, from ${country}`);
   rl.close();
-});
+})();
